@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 
-public class ListaPreguntas extends CursorAdapter{
+class ListaPreguntas extends CursorAdapter{
 
     public ListaPreguntas(Context context, Cursor c) {
         super(context, c);
