@@ -49,15 +49,13 @@ public class CrearActivity extends AppCompatActivity {
             } while (c.moveToNext());
         };
 
-
-
         db.execSQL("INSERT INTO preguntas (titulo, pregunta) VALUES ('" + titulo.getText() + "','" + pregunta.getText() + "')");
         db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel11.getText()+"','"+rel12.getText()+"')");
         db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel21.getText()+"','"+rel22.getText()+"')");
         db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel31.getText()+"','"+rel32.getText()+"')");
         db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel41.getText()+"','"+rel42.getText()+"')");
 
-        finish();
+        cancel(v);
     }
 
     public void cancel(View v) {

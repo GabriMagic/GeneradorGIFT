@@ -16,18 +16,24 @@ public class MostrarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.formato_pregunta);
 
-      TextView label = (TextView)findViewById(R.id.pregunta);
+        int id = 0;
+
+        TextView label = (TextView) findViewById(R.id.pregunta);
 
         PreguntasHelper preguntasHelper = new PreguntasHelper(this, "PreguntasDB", null, 1);
         SQLiteDatabase db = preguntasHelper.getWritableDatabase();
 
-        Cursor c = db.rawQuery("SELECT pregunta, relacion1, relacion2 FROM preguntas INNER JOIN relaciones ON preguntas._id = relaciones._id", null);
+        Cursor c = db.rawQuery("SELECT pregunta FROM preguntas WHERE _id = " + id, null);
+        Cursor c2 = db.rawQuery("SELECT * FROM relaciones WHERE _id = " + id, null);
 
-        if (c.moveToFirst()) {
-//            label.setText(c.getString(0)+"{\n"+"\n"+c.getString(1)+"\n"+c.getString(2)+"\n}\n");
-            label.setText("NADA");
-//            label.setText(c.getString(0));
+        label.setText("");
+        if (c.moveToFirst() && c2.moveToFirst()) {
+            label.setText("" + c.getString(0) + " {\n");
+            do {
+                label.setText("  " + label.getText() + "=" + c2.getString(1) + " -> " + c2.getString(2) + "\n");
+            } while (c2.moveToNext());
         }
+        label.setText(label.getText() + "}");
 
     }
 }

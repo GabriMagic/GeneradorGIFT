@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     PreguntasHelper preguntasHelper;
     SQLiteDatabase db;
     ListView listaPreguntas;
-
+    Button mostrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button crear = (Button) findViewById(R.id.crear);
         Button exportar = (Button) findViewById(R.id.exportar);
         Button editar = (Button) findViewById(R.id.editarButton);
+        mostrar = (Button) findViewById(R.id.mostrarButton);
 
         preguntasHelper = new PreguntasHelper(this, "PreguntasDB", null, 1);
         db = preguntasHelper.getWritableDatabase();
@@ -41,8 +42,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     public void mostrarPregunta(View v) {
+
+        mostrar.getId();
+
         Intent intent = new Intent(this, MostrarActivity.class);
         startActivity(intent);
     }
