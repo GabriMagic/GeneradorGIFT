@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         preguntasHelper = new PreguntasHelper(this, "PreguntasDB", null, 1);
         db = preguntasHelper.getWritableDatabase();
         listaPreguntas = (ListView) findViewById(R.id.listaPreguntas);
-
+//
 //        preguntasHelper.onUpgrade(db, 1, 1);
-
+//
         Cursor c = db.rawQuery("SELECT * FROM preguntas", null);
         Adapter cursorAdapter = new Adapter(this, c);
         listaPreguntas.setAdapter(cursorAdapter);
@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void mostrarPregunta(View v) {
-
+        Intent intent = new Intent(this, MostrarActivity.class);
+        startActivity(intent);
     }
 
     public void crearPregunta(View v) {

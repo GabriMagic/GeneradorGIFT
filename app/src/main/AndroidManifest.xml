@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".CrearActivity">
         </activity>
-
+        <activity android:name=".MostrarActivity">
+        </activity>
     </application>
 
 </manifest>
