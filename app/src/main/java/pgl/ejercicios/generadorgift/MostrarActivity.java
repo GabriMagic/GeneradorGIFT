@@ -16,8 +16,8 @@ public class MostrarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.formato_pregunta);
 
-        int id = 0;
-
+        Bundle extras = getIntent().getExtras();
+        int id = extras.getInt("id");
         TextView label = (TextView) findViewById(R.id.pregunta);
 
         PreguntasHelper preguntasHelper = new PreguntasHelper(this, "PreguntasDB", null, 1);
@@ -36,4 +36,5 @@ public class MostrarActivity extends AppCompatActivity {
         label.setText(label.getText() + "}");
 
     }
+
 }

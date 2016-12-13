@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
@@ -29,10 +30,13 @@ public class Adapter extends CursorAdapter {
         TextView titulo = (TextView) v.findViewById(R.id.tituloText);
         TextView pregunta = (TextView) v.findViewById(R.id.preguntaText);
 
-        String body = cursor.getString(cursor.getColumnIndexOrThrow("titulo"));
-        String priority = cursor.getString(cursor.getColumnIndexOrThrow("pregunta"));
+        Button mostrarButton = (Button) v.findViewById(R.id.mostrarButton);
+        mostrarButton.setTag(cursor.getString(cursor.getColumnIndexOrThrow("_id")));
 
-        titulo.setText(body);
-        pregunta.setText(String.valueOf(priority));
+        Button editarButton = (Button) v.findViewById(R.id.editarButton);
+        editarButton.setTag(cursor.getString(cursor.getColumnIndexOrThrow("_id")));
+
+        titulo.setText(cursor.getString(cursor.getColumnIndexOrThrow("titulo")));
+        pregunta.setText(cursor.getString(cursor.getColumnIndexOrThrow("pregunta")));
     }
 }

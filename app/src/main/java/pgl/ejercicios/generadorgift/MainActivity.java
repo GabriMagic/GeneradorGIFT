@@ -31,22 +31,26 @@ public class MainActivity extends AppCompatActivity {
 //
 //        preguntasHelper.onUpgrade(db, 1, 1);
 //
+        cargarLista();
+
+
+    }
+
+    private void cargarLista() {
         Cursor c = db.rawQuery("SELECT * FROM preguntas", null);
         Adapter cursorAdapter = new Adapter(this, c);
         listaPreguntas.setAdapter(cursorAdapter);
-
-
     }
 
     public void editarPregunta(View v) {
-
+        Intent intent = new Intent(this, CrearActivity.class);
+        intent.putExtra("id",Integer.parseInt((String) v.getTag()));
+        startActivity(intent);
     }
 
     public void mostrarPregunta(View v) {
-
-        mostrar.getId();
-
         Intent intent = new Intent(this, MostrarActivity.class);
+        intent.putExtra("id",Integer.parseInt((String) v.getTag()));
         startActivity(intent);
     }
 

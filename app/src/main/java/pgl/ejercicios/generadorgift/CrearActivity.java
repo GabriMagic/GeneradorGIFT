@@ -1,5 +1,6 @@
 package pgl.ejercicios.generadorgift;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -55,6 +56,8 @@ public class CrearActivity extends AppCompatActivity {
         db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel31.getText()+"','"+rel32.getText()+"')");
         db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel41.getText()+"','"+rel42.getText()+"')");
 
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
         cancel(v);
     }
 
