@@ -14,21 +14,6 @@ public class CrearActivity extends AppCompatActivity {
 
     SQLiteDatabase db;
 
-    TextView titulo = (TextView) findViewById(R.id.tituloText);
-    TextView pregunta = (TextView) findViewById(R.id.preuntaText);
-
-    TextView rel11 = (TextView) findViewById(R.id.rel1_1);
-    TextView rel12 = (TextView) findViewById(R.id.rel1_2);
-
-    TextView rel21 = (TextView) findViewById(R.id.rel2_1);
-    TextView rel22 = (TextView) findViewById(R.id.rel2_2);
-
-    TextView rel31 = (TextView) findViewById(R.id.rel3_1);
-    TextView rel32 = (TextView) findViewById(R.id.rel3_2);
-
-    TextView rel41 = (TextView) findViewById(R.id.rel4_1);
-    TextView rel42 = (TextView) findViewById(R.id.rel4_2);
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,18 +25,29 @@ public class CrearActivity extends AppCompatActivity {
 
     public void crearPregunta(View v) {
 
-        Cursor c = db.rawQuery("SELECT * FROM preguntas ORDER BY id_pregunta DESC LIMIT 1", null);
-
+        Cursor c = db.rawQuery("SELECT * FROM preguntas ORDER BY _id DESC LIMIT 1", null);
         int i = 0;
         if (c.moveToFirst()) {
-
              i = c.getInt(0);
-
             do {
                 i++;
             } while (c.moveToNext());
         };
 
+        TextView titulo = (TextView) findViewById(R.id.tituloText);
+        TextView pregunta = (TextView) findViewById(R.id.preuntaText);
+
+        TextView rel11 = (TextView) findViewById(R.id.rel1_1);
+        TextView rel12 = (TextView) findViewById(R.id.rel1_2);
+
+        TextView rel21 = (TextView) findViewById(R.id.rel2_1);
+        TextView rel22 = (TextView) findViewById(R.id.rel2_2);
+
+        TextView rel31 = (TextView) findViewById(R.id.rel3_1);
+        TextView rel32 = (TextView) findViewById(R.id.rel3_2);
+
+        TextView rel41 = (TextView) findViewById(R.id.rel4_1);
+        TextView rel42 = (TextView) findViewById(R.id.rel4_2);
 
         db.execSQL("INSERT INTO preguntas (titulo, pregunta) VALUES ('" + titulo.getText() + "','" + pregunta.getText() + "')");
         db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel11.getText()+"','"+rel12.getText()+"')");

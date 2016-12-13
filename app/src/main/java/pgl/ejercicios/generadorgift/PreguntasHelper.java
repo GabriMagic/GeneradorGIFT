@@ -9,8 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class PreguntasHelper extends SQLiteOpenHelper{
 
-    private String createTable = "CREATE TABLE preguntas (id_pregunta INTEGER PRIMARY KEY AUTOINCREMENT, titulo TEXT, pregunta TEXT)";
-    private String createTable2 = "CREATE TABLE relaciones (id_pregunta INTEGER, relacion1 TEXT , relacion2 TEXT)";
+    private String createTable = "CREATE TABLE preguntas ( _id INTEGER PRIMARY KEY AUTOINCREMENT, titulo TEXT, pregunta TEXT)";
+    private String createTable2 = "CREATE TABLE relaciones ( _id INTEGER, relacion1 TEXT , relacion2 TEXT)";
 
     public PreguntasHelper(Context contexto, String nombre, SQLiteDatabase.CursorFactory factory, int version){
     super(contexto,nombre,factory,version);
