@@ -25,15 +25,6 @@ public class CrearActivity extends AppCompatActivity {
 
     public void crearPregunta(View v) {
 
-        Cursor c = db.rawQuery("SELECT * FROM preguntas ORDER BY _id DESC LIMIT 1", null);
-        int i = 0;
-        if (c.moveToFirst()) {
-             i = c.getInt(0);
-            do {
-                i++;
-            } while (c.moveToNext());
-        };
-
         TextView titulo = (TextView) findViewById(R.id.tituloText);
         TextView pregunta = (TextView) findViewById(R.id.preuntaText);
 
@@ -48,6 +39,17 @@ public class CrearActivity extends AppCompatActivity {
 
         TextView rel41 = (TextView) findViewById(R.id.rel4_1);
         TextView rel42 = (TextView) findViewById(R.id.rel4_2);
+
+        Cursor c = db.rawQuery("SELECT * FROM preguntas ORDER BY _id DESC LIMIT 1", null);
+        int i = 0;
+        if (c.moveToFirst()) {
+             i = c.getInt(0);
+            do {
+                i++;
+            } while (c.moveToNext());
+        };
+
+
 
         db.execSQL("INSERT INTO preguntas (titulo, pregunta) VALUES ('" + titulo.getText() + "','" + pregunta.getText() + "')");
         db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel11.getText()+"','"+rel12.getText()+"')");

@@ -35,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
         listaPreguntas.setAdapter(cursorAdapter);
 
 
+    }
+
+    public void editarPregunta(View v) {
+
+    }
+
+
+    public void mostrarPregunta(View v) {
 
     }
 

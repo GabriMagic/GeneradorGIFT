@@ -33,14 +33,16 @@
             android:layout_height="wrap_content"
             android:text="Editar"
             android:id="@+id/editarButton"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:onClick="editarPregunta" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mostrar"
             android:id="@+id/mostrarButton"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:onClick="mostrarPregunta" />
 
     </LinearLayout>
 </LinearLayout>
