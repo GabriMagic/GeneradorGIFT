@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void editarPregunta(View v) {
-        Intent intent = new Intent(this, CrearActivity.class);
+        Intent intent = new Intent(this, EditarActivity.class);
         intent.putExtra("id",Integer.parseInt((String) v.getTag()));
         startActivity(intent);
     }
