@@ -29,13 +29,11 @@ public class Adapter extends CursorAdapter {
 
         TextView titulo = (TextView) v.findViewById(R.id.tituloText);
         TextView pregunta = (TextView) v.findViewById(R.id.preguntaText);
-
         Button mostrarButton = (Button) v.findViewById(R.id.mostrarButton);
-        mostrarButton.setTag(cursor.getString(cursor.getColumnIndexOrThrow("_id")));
-
         Button editarButton = (Button) v.findViewById(R.id.editarButton);
-        editarButton.setTag(cursor.getString(cursor.getColumnIndexOrThrow("_id")));
 
+        mostrarButton.setTag(cursor.getString(cursor.getColumnIndexOrThrow("_id")));
+        editarButton.setTag(cursor.getString(cursor.getColumnIndexOrThrow("_id")));
         titulo.setText(cursor.getString(cursor.getColumnIndexOrThrow("titulo")));
         pregunta.setText(cursor.getString(cursor.getColumnIndexOrThrow("pregunta")));
     }
