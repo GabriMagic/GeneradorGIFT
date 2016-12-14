@@ -44,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void editarPregunta(View v) {
-        Intent intent = new Intent(this, EditarActivity.class);
+        Intent intent = new Intent(MainActivity.this, EditarActivity.class);
         intent.putExtra("id",Integer.parseInt((String) v.getTag()));
         startActivity(intent);
     }
 
     public void mostrarPregunta(View v) {
-        Intent intent = new Intent(this, MostrarActivity.class);
+        Intent intent = new Intent(MainActivity.this, MostrarActivity.class);
         intent.putExtra("id",Integer.parseInt((String) v.getTag()));
         startActivity(intent);
     }
@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void exportarPregunta(View v) {
+
+        
 
     }
 }

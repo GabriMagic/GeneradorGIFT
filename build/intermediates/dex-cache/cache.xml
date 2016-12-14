@@ -1,3 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_643427d0b10d3674d2cee776f6b729abf6cc2872\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_8b5117f25b31b95d3829db4b2958f8b6bce12b7f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_52b8e41784a7c3af700222e9a25d78bbd72f8a6a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7cfc13f45d6f69cee6846c33345a29a629a1af71">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9b3a8f84a21dc5ff2962cad1d25e1521994ab8e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_64fc955387f2787d3dbe2ba7536d5aec814bca5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_559111dec72f7d52f7288b3ec2f6b62373217005\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_5776027b445e9e004f8b6594cd97d8315dfe8158\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_d6ba765c93d7f6ff3239f018a84f06ac385192e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c8c1531ea286abb409fee53817f9a6b3e2399db1">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a434efa9234f1f9567728699d18a9879f195de15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_18014f31968cce8403e1d61ac8611fb8bb2882e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_41d92cdaaf8c897f8777ff19bb9f0c2e7cd487e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_72b39fcb8001a71b9b6cf5b8de93c29748450951\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_8780d1c2afd9b12b8cebac8ef21419e2ab5bbd69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_855c17cb40c926177003e5c2e99ebe1dcbcbf004\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_6cad08daa2cb8fa49749124f34f580c64648feca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.0_b9a93693e9a82f8a606a607d158dda6b837f2680\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\PGL\GeneradorGIFT\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_bba5c0506da7deccbd9eb4a4feebcb1c9efdbf91\classes.dex" />
+    </item>
+
+</items>
