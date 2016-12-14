@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -41,22 +42,24 @@ public class CrearActivity extends AppCompatActivity {
         TextView rel41 = (TextView) findViewById(R.id.rel4_1);
         TextView rel42 = (TextView) findViewById(R.id.rel4_2);
 
-        Cursor c = db.rawQuery("SELECT * FROM preguntas ORDER BY _id DESC LIMIT 1", null);
-        int i = 0;
-        if (c.moveToFirst()) {
-             i = c.getInt(0);
-            do {
-                i++;
-            } while (c.moveToNext());
-        };
+        int id = 1;
 
         db.execSQL("INSERT INTO preguntas (titulo, pregunta) VALUES ('" + titulo.getText() + "','" + pregunta.getText() + "')");
-        db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel11.getText()+"','"+rel12.getText()+"')");
-        db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel21.getText()+"','"+rel22.getText()+"')");
-        db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel31.getText()+"','"+rel32.getText()+"')");
-        db.execSQL("INSERT INTO relaciones VALUES ('"+i+"','"+rel41.getText()+"','"+rel42.getText()+"')");
 
-        Intent intent = new Intent(this,MainActivity.class);
+        Cursor c = db.rawQuery("SELECT _id FROM preguntas", null);
+
+        if (c.moveToLast()) {
+            id = c.getInt(0);
+        }
+
+        c.close();
+
+        db.execSQL("INSERT INTO relaciones VALUES ('" + id + "','" + rel11.getText() + "','" + rel12.getText() + "')");
+        db.execSQL("INSERT INTO relaciones VALUES ('" + id + "','" + rel21.getText() + "','" + rel22.getText() + "')");
+        db.execSQL("INSERT INTO relaciones VALUES ('" + id + "','" + rel31.getText() + "','" + rel32.getText() + "')");
+        db.execSQL("INSERT INTO relaciones VALUES ('" + id + "','" + rel41.getText() + "','" + rel42.getText() + "')");
+
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         cancel(v);
     }
