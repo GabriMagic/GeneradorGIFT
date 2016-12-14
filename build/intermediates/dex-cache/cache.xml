@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="7cfc13f45d6f69cee6846c33345a29a629a1af71">
+        sha1="f92f0d105d101098b5a890c9dc2a358bb79141f6">
         <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9b3a8f84a21dc5ff2962cad1d25e1521994ab8e4\classes.dex" />
     </item>
     <item
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="c8c1531ea286abb409fee53817f9a6b3e2399db1">
+        sha1="f186536072461531c27dfc50b402ae45c291fb25">
         <dex dex="E:\PGL\GeneradorGIFT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a434efa9234f1f9567728699d18a9879f195de15\classes.dex" />
     </item>
     <item
